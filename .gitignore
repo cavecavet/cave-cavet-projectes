@@ -1,0 +1,26 @@
+# Jira tokens and credentials
+.jira_cave_token
+credentials_drive.json
+*_oauth.txt
+
+# Python virtual environment
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Excel files and temporary files
+*.xlsx
+~$*.xlsx
+*.tmp
+
+# macOS files
+.DS_Store
+
+# Backup directories
+epic_pages.back/
+epic_pages.mal/
+
+# Logs
+*.log
