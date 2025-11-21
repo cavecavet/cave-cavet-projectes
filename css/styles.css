@@ -14,7 +14,7 @@ body { font-family: Inter, system-ui, -apple-system, Arial, sans-serif; backgrou
 @media (max-width: 600px) { .container { padding: 0.6rem; margin: 1rem; } }
 .btn { display:inline-block; padding:8px 12px; background:#0b69ff; color:#fff; border-radius:8px; text-decoration:none; margin-right:8px; box-shadow: 0 2px 8px rgba(11,105,255,0.12); }
 .btn.secondary { background:#6c757d }
-.nav-buttons { margin-top:1rem; display:flex; gap:8px; flex-wrap:nowrap; align-items:center; flex-shrink: 0; }
+.nav-buttons { margin-top:1rem; display:flex; gap:8px; flex-wrap:nowrap; align-items:center; flex-shrink: 0; justify-content: flex-end; }
 .table-responsive { overflow:auto; max-height: 360px; margin-bottom: 0.75rem; border-radius:6px; padding:4px; }
 .status { display:inline-block; padding:4px 8px; border-radius:999px; color:#fff; font-size:0.85em; }
 .status.en-curs { background:#0d9aa6; }
