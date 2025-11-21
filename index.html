@@ -1,52 +1,31 @@
-
 <!DOCTYPE html>
 <html lang='ca'>
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Projectes Cave Cavet</title>
-    <style>
-    body { font-family: Inter, system-ui, -apple-system, Arial, sans-serif; background: #f6f7fb; margin: 0; }
-    .container { max-width: 920px; margin: 2.2rem auto; padding: 1.2rem; background: #ffffff; border-radius: 10px; box-shadow: 0 6px 24px rgba(18,38,63,0.06); }
-    .card { background: linear-gradient(180deg,#ffffff 0%,#f7fafc 100%); margin: 0.9rem 0; padding: 1rem; border-radius: 8px; cursor: pointer; transition: transform 0.12s ease, box-shadow 0.12s ease; border:1px solid #eef2f6 }
-    .card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(18,38,63,0.08); }
-    .field { margin: 0.6rem 0; }
-    .field-name { font-weight: 600; color: #243746; }
-    @media (max-width: 600px) { .container { padding: 0.6rem; margin: 1rem; } }
-    .btn { display:inline-block; padding:8px 12px; background:#0b69ff; color:#fff; border-radius:8px; text-decoration:none; margin-right:8px; box-shadow: 0 2px 8px rgba(11,105,255,0.12); }
-    .btn.secondary { background:#6c757d }
-    .nav-buttons { margin-top:1rem; display:flex; gap:8px; flex-wrap:nowrap; align-items:center; }
-    .table-responsive { overflow:auto; max-height: 360px; margin-bottom: 0.75rem; border-radius:6px; padding:4px; }
-    .status { display:inline-block; padding:4px 8px; border-radius:999px; color:#fff; font-size:0.85em; }
-    .status.en-curs { background:#0d9aa6; }
-    .status.idea { background:#7b61ff; }
-    .status.finalitzada { background:#20b04b; }
-    .status.altres { background:#8a94a6; }
-    .btn:hover { opacity:0.96; }
-    .card .meta { font-size:0.9em; color:#6b7280; margin-top:0.35rem; }
-    .row-en-curs td { background: #ecfbfd; }
-    .row-idea td { background: #f6f2ff; }
-    .row-finalitzada td { background: #eefaf1; }
-    .row-altres td { background: #fbfcfe; }
-    .btn.disabled { opacity:0.5; pointer-events:none; }
-    </style>
+    <title>Projectes de l'Associació Cave Cavet</title>
+    <link rel='stylesheet' href='css/styles.css'>
     <script>
     function goToEpic(key) { window.location.href = 'epic-' + key + '.html'; }
     </script>
 </head>
 <body>
     <div class='container'>
-        <h1>Projectes Cave Cavet</h1>
-        <p>Feu clic en un projecte per veure'n les dades.</p>
-        <div class='card' onclick="goToEpic('CAVE-101')">Projecte Conferència Aula Gent Gran URV</div>
-        <div class='card' onclick="goToEpic('CAVE-16')">Projecte CrowdSourcing</div>
-        <div class='card' onclick="goToEpic('CAVE-15')">Projecte compte Crypto</div>
-        <div class='card' onclick="goToEpic('CAVE-13')">Projecte moure els biòtops</div>
-        <div class='card' onclick="goToEpic('CAVE-12')">Projecte viver Posidònia</div>
-        <div class='card' onclick="goToEpic('CAVE-11')">Projecte Espigons</div>
-        <div class='card' onclick="goToEpic('CAVE-10')">Projecte R-Concha</div>
-        <div class='card' onclick="goToEpic('CAVE-4')">Projecte ExpoFoto</div>
-
+        <div class='header'>
+            <img src='images/logo.png' alt='Cave Cavet Logo'>
+            <h1>Projectes Cave Cavet</h1>
+        </div>
+        <div class='content-wrapper'>
+            <p>Feu clic en un projecte per veure'n les dades.</p>
+            <div class='card' onclick="goToEpic('CAVE-101')">Projecte Conferència Aula Gent Gran URV</div>
+            <div class='card' onclick="goToEpic('CAVE-16')">Projecte CrowdSourcing</div>
+            <div class='card' onclick="goToEpic('CAVE-15')">Projecte compte Crypto</div>
+            <div class='card' onclick="goToEpic('CAVE-13')">Projecte moure els biòtops</div>
+            <div class='card' onclick="goToEpic('CAVE-12')">Projecte viver Posidònia</div>
+            <div class='card' onclick="goToEpic('CAVE-11')">Projecte Espigons</div>
+            <div class='card' onclick="goToEpic('CAVE-10')">Projecte R-Concha</div>
+            <div class='card' onclick="goToEpic('CAVE-4')">Projecte ExpoFoto</div>
+        </div>
     </div>
 </body>
 </html>
