@@ -10,22 +10,53 @@
     </script>
 </head>
 <body>
-    <div class='container'>
-        <div class='header'>
-            <img src='images/logo.png' alt='Cave Cavet Logo'>
-            <h1>Projectes Cave Cavet</h1>
-        </div>
-        <div class='content-wrapper'>
-            <p>Feu clic en un projecte per veure'n les dades.</p>
-            <div class='card' onclick="goToEpic('CAVE-101')">Projecte Conferència Aula Gent Gran URV</div>
-            <div class='card' onclick="goToEpic('CAVE-16')">Projecte CrowdSourcing</div>
-            <div class='card' onclick="goToEpic('CAVE-15')">Projecte compte Crypto</div>
-            <div class='card' onclick="goToEpic('CAVE-13')">Projecte moure els biòtops</div>
-            <div class='card' onclick="goToEpic('CAVE-12')">Projecte viver Posidònia</div>
-            <div class='card' onclick="goToEpic('CAVE-11')">Projecte Espigons</div>
-            <div class='card' onclick="goToEpic('CAVE-10')">Projecte R-Concha</div>
-            <div class='card' onclick="goToEpic('CAVE-4')">Projecte ExpoFoto</div>
-        </div>
-    </div>
+    <main class='container'>
+        <header class='header'>
+            <img src='images/logo.png' alt='Cave Cavet Logo' class='logo'>
+            <div class='header-content'>
+                <h1>Projectes Cave Cavet</h1>
+                <p class='subtitle'>Gestió d'epics i projectes</p>
+            </div>
+        </header>
+        <section class='content-wrapper'>
+            <div class='intro-text'>
+                <p>Selecciona un projecte per veure'n els detalls i progressió.</p>
+            </div>
+            <div class='cards-grid'>
+                <article class='card' onclick="goToEpic('CAVE-101')" role='button' tabindex='0' onkeypress="if(event.key==='Enter') goToEpic('CAVE-101')">
+                    <h3>Projecte Xerrada Aula Gent Gran URV</h3>
+                    <span class='card-code'>CAVE-101</span>
+                </article>
+                <article class='card' onclick="goToEpic('CAVE-16')" role='button' tabindex='0' onkeypress="if(event.key==='Enter') goToEpic('CAVE-16')">
+                    <h3>Projecte CrowdSourcing</h3>
+                    <span class='card-code'>CAVE-16</span>
+                </article>
+                <article class='card' onclick="goToEpic('CAVE-15')" role='button' tabindex='0' onkeypress="if(event.key==='Enter') goToEpic('CAVE-15')">
+                    <h3>Projecte compte Crypto</h3>
+                    <span class='card-code'>CAVE-15</span>
+                </article>
+                <article class='card' onclick="goToEpic('CAVE-13')" role='button' tabindex='0' onkeypress="if(event.key==='Enter') goToEpic('CAVE-13')">
+                    <h3>Projecte moure els biòtops</h3>
+                    <span class='card-code'>CAVE-13</span>
+                </article>
+                <article class='card' onclick="goToEpic('CAVE-12')" role='button' tabindex='0' onkeypress="if(event.key==='Enter') goToEpic('CAVE-12')">
+                    <h3>Projecte viver Posidònia</h3>
+                    <span class='card-code'>CAVE-12</span>
+                </article>
+                <article class='card' onclick="goToEpic('CAVE-11')" role='button' tabindex='0' onkeypress="if(event.key==='Enter') goToEpic('CAVE-11')">
+                    <h3>Projecte Espigons</h3>
+                    <span class='card-code'>CAVE-11</span>
+                </article>
+                <article class='card' onclick="goToEpic('CAVE-10')" role='button' tabindex='0' onkeypress="if(event.key==='Enter') goToEpic('CAVE-10')">
+                    <h3>Projecte R-Concha</h3>
+                    <span class='card-code'>CAVE-10</span>
+                </article>
+                <article class='card' onclick="goToEpic('CAVE-4')" role='button' tabindex='0' onkeypress="if(event.key==='Enter') goToEpic('CAVE-4')">
+                    <h3>Projecte ExpoFoto</h3>
+                    <span class='card-code'>CAVE-4</span>
+                </article>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
