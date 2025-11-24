@@ -78,7 +78,9 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     min-height: 150px;
 }
 
@@ -106,6 +108,7 @@ body {
     border-radius: 4px;
     display: inline-block;
     width: fit-content;
+    margin: 0 auto;
 }
 
 .field {
@@ -151,12 +154,13 @@ body {
 }
 
 .btn.secondary {
-    background: #e8e8e8;
-    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
 }
 
 .btn.secondary:hover {
-    background: #d0d0d0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
 }
 
 .btn.disabled,
@@ -175,6 +179,60 @@ body {
 
 table {
     background: white;
+}
+
+.footer {
+    background: white;
+    padding: 30px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.footer-content {
+    flex: 1;
+}
+
+.footer-org {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.footer-address {
+    font-size: 12px;
+    color: #666;
+}
+
+.footer-social {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    fill: #667eea;
+    transition: fill 0.2s;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    fill: #764ba2;
 }
 
 thead {
